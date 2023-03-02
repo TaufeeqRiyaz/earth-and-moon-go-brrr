@@ -1,0 +1,34 @@
+/* Set margin to 0 and make the body take up the entire width and height of the page */
+body { 
+    margin: 0; 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Make the canvas take up the entire width and height of the page and set a background image */
+  canvas { 
+    width: 100%; 
+    height: 100%;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409445/stars_background.jpg');
+    background-size: 200px;
+  }
+  
+  /* Set the loading image page to fixed position and take up the entire width and height of the page */
+  #loading_image_page {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 1;
+  }
+  
+  /* Set the loading image to take up the entire height of the loading image page and centered horizontally and vertically */
+  #loading_image {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
